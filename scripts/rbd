@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /opt/lib/rbd-docker-plugin/lib/x86_64-linux-gnu/ld-2.13.so --library-path /opt/lib/rbd-docker-plugin/usr/lib/x86_64-linux-gnu:/opt/lib/rbd-docker-plugin/lib/x86_64-linux-gnu:/opt/lib/rbd-docker-plugin/usr/lib /opt/lib/rbd-docker-plugin/usr/bin/rbd "$@"

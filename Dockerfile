@@ -31,7 +31,7 @@ RUN go get -t .
 ADD . ${SRC_ROOT}
 
 RUN mkdir /scripts
-ADD scripts/* /scripts
+ADD scripts/* /scripts/
 
 # Clean up all the apt stuff
 RUN apt-get clean && \
